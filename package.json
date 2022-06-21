@@ -12,10 +12,6 @@
     "time",
     "text"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "repository": "github:@kartheekgp/convert-time-to-text",
-  "author": "",
+  "author": "kartheekgp",
   "license": "ISC"
 }
