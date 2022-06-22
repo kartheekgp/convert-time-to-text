@@ -1,6 +1,6 @@
 {
   "name": "@kartheekgp/convert-time-to-text",
-  "version": "5.0.3",
+  "version": "6.0.0",
   "description": "Converts time to text",
   "main": "index.js",
   "scripts": {
