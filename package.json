@@ -1,10 +1,10 @@
 {
-  "name": "convert-time-to-text",
-  "version": "5.0.2",
-  "description": "",
+  "name": "@kartheekgp/convert-time-to-text",
+  "version": "5.0.3",
+  "description": "Converts time to text",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "convert-time-to-text",
@@ -12,6 +12,13 @@
     "time",
     "text"
   ],
-  "author": "kartheekgp",
-  "license": "ISC"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": "git://github.com/kartheekgp/convert-time-to-text.git",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.1"
+  }
 }

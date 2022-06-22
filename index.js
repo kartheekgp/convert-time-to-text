@@ -7,7 +7,7 @@ exports.convertTimeToText = function(h, m) {
     
     h = h % 12;
     m = m % 60;
-    // Write your code here
+
     let numberArray = [
         '',
         'one',
@@ -30,9 +30,9 @@ exports.convertTimeToText = function(h, m) {
         'eighteen',
         'nineteen',
         'twenty'
-    ],tempM = m, hourString = h > 0 ?numberArray[h] : numberArray[12], minuteString = null, timeText,timeTextSubString = "to";
+    ],tempM = m, hourString = h > 0 ? numberArray[h] : numberArray[12], minuteString = null, timeText,timeTextSubString = "to";
 
-    // Change m to mod stuff
+    // Check for minute
     if (m == 0){
         timeText = hourString + " o' clock";
     } else if(m == 15){
@@ -43,14 +43,19 @@ exports.convertTimeToText = function(h, m) {
         timeText = "quarter to " + numberArray[h + 1];
     } else {
         if (m > 30) {
+            // If minute is greater than 30, increment hour
             tempM = 60 - m;
             hourString = numberArray[h + 1];
         }
+        //  If present in the array use that, else we have to compute.
+        //  Example : If minutes is 29 this will be split to 20 + 9 and corresponding text will be fetched from the map above.
         tempM = (numberArray[tempM] || numberArray[(tempM/10|0) *10] + ' ' +
             numberArray[tempM%10|0]) + ' minute';
+        //  Changes minute to minutes
         if(m >1){
             tempM = tempM + 's';
         }
+        //  Depending on the value of the minute, the text display changes
         if (m > 30) {
             timeText = tempM + ' to '+ hourString;
         } else {
