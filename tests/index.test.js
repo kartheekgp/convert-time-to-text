@@ -6,6 +6,7 @@ test('should convert time to text', () => {
     expect(converter.convertTimeToText(12,0)).toBe('twelve o\' clock');
     expect(converter.convertTimeToText(0,0)).toBe('twelve o\' clock');
     expect(converter.convertTimeToText(5,1)).toBe('one minute past five');
+    expect(converter.convertTimeToText(12,1)).toBe('one minute past twelve');
     expect(converter.convertTimeToText(5,10)).toBe('ten minutes past five');
     expect(converter.convertTimeToText(5,15)).toBe('quarter past five');
     expect(converter.convertTimeToText(5,30)).toBe('half past five');

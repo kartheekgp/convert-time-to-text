@@ -74,3 +74,6 @@ twenty minutes past twelve
 ```
 
 To publish packages : https://itnext.io/setting-up-github-packages-for-npm-2bc9f8e4b11e
+
+
+Note : To publish to npm, might have to remove publishConfig and repository in package.json and remove @name from name.
