@@ -20,37 +20,22 @@ Usage :
 const timeToText = require('convert-time-to-text');
 
 let a = timeToText.convertTimeToText(5,00);
-console.log(a);
-a = timeToText.convertTimeToText(5,0);
-console.log(a);
-a = timeToText.convertTimeToText(5,01);
-console.log(a);
-a = timeToText.convertTimeToText(5,1);
-console.log(a);
-a = timeToText.convertTimeToText(5,9);
-console.log(a);
-a = timeToText.convertTimeToText(5,10);
-console.log(a);
-a = timeToText.convertTimeToText(5,15);
-console.log(a);
-a = timeToText.convertTimeToText(5,30);
-console.log(a);
-a = timeToText.convertTimeToText(5,37);
-console.log(a);
-a = timeToText.convertTimeToText(5,40);
-console.log(a);
-a = timeToText.convertTimeToText(5,45);
-console.log(a);
-a = timeToText.convertTimeToText(5,47);
-console.log(a);
-a = timeToText.convertTimeToText(12,24);
-console.log(a);
-a = timeToText.convertTimeToText(11,50);
-console.log(a);
-a = timeToText.convertTimeToText(12,50);
-console.log(a);
-a = timeToText.convertTimeToText(12,20);
-console.log(a);
+console.log(timeToText.convertTimeToText(5,00));
+console.log(timeToText.convertTimeToText(5,0));
+console.log(timeToText.convertTimeToText(5,01));
+console.log(timeToText.convertTimeToText(5,1));
+console.log(timeToText.convertTimeToText(5,9));
+console.log(timeToText.convertTimeToText(5,10));
+console.log(timeToText.convertTimeToText(5,15));
+console.log(timeToText.convertTimeToText(5,30));
+console.log(timeToText.convertTimeToText(5,37));
+console.log(timeToText.convertTimeToText(5,40));
+console.log(timeToText.convertTimeToText(5,45));
+console.log(timeToText.convertTimeToText(5,47));
+console.log(timeToText.convertTimeToText(12,24));
+console.log(timeToText.convertTimeToText(11,50));
+console.log(timeToText.convertTimeToText(12,50));
+console.log(timeToText.convertTimeToText(12,20));
 ```
 
 Output : 
