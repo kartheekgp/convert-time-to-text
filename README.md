@@ -19,7 +19,6 @@ Usage :
 ```
 const timeToText = require('convert-time-to-text');
 
-let a = timeToText.convertTimeToText(5,00);
 console.log(timeToText.convertTimeToText(5,00));
 console.log(timeToText.convertTimeToText(5,0));
 console.log(timeToText.convertTimeToText(5,01));
